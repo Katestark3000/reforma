@@ -1,0 +1,140 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+    color: var(--color-black-100);
+    padding: 2% 5% 2% 5%;
+
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        gap: 3%;
+        width: min-content;
+        align-items: center;
+
+    }
+
+    .logo_name {
+        font-size: 36px;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+
+    }
+
+    .ul-nav {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+
+        font-weight: 600;
+    }
+
+    .navigation {
+        display: flex;
+        width: 50%;
+
+    }
+
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: var(--color-black-100);
+}
+
+a:hover {
+    color: var(--color-sand);
+
+}
+
+a:active {
+    color: var(--color-teracot);
+
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+}
+@media (max-width: 767px) {
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo_name {
+        font-size: 28px;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ul-nav {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+        align-items: center;
+    }
+
+    .logos {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+/* ——————————————————————————————— */
+/* 📲 TABLET 768–1279px */
+/* ——————————————————————————————— */
+@media (max-width: 1279px) and (min-width: 768px) {
+
+    .footer {
+        gap: 20px;
+    }
+
+    .logo_name {
+        font-size: 30px;
+    }
+
+    .navigation {
+        width: 55%;
+        justify-content: center;
+    }
+
+    .ul-nav {
+        gap: 25px;
+        font-size: 16px;
+    }
+
+    .logos {
+        gap: 15px;
+    }
+}
+
+/* ——————————————————————————————— */
+/* 🖥 DESKTOP ≥1280px (чуть усилим аккуратность) */
+/* ——————————————————————————————— */
+@media (min-width: 1280px) {
+    .footer {
+        padding: 50px 7%;
+    }
+}

@@ -1,0 +1,80 @@
+.nav {
+    border: 2px solid var(--color-sand);
+    width: 23%;                // чтобы 4 карточки поместились ровно
+    min-width: 260px;
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    &-image1 {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &-title {
+        font-size: 18px;
+        border-bottom: 1px solid var(--text);
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 4px;
+    }
+
+    &-title1 {
+        font-size: 15px;
+        line-height: 1.25;
+        color: var(--text);
+    }
+
+    &-title2 {
+        font-size: 16px;
+        text-align: right;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1279px) and (min-width: 768px) {
+    .nav {
+        width: 48%;     // две в ряд
+        min-width: auto;
+
+        &-image1 {
+            height: 150px;
+        }
+        &-title {
+            font-size: 17px;
+        }
+        &-title1 {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .nav {
+        width: 100%;     // одна в ряд
+        min-width: auto;
+
+        &-image1 {
+            height: 180px;
+        }
+        &-title {
+            font-size: 17px;
+        }
+        &-title1 {
+            font-size: 14px;
+        }
+        &-title2 {
+            font-size: 15px;
+        }
+    }
+}

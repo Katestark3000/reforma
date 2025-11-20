@@ -1,0 +1,44 @@
+.block1-back {
+  background: #E8DACD;
+  border-radius: 10px;
+
+  width: 100%;
+  min-height: 300px;        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;       
+  overflow: hidden;  
+  opacity: 0;  
+  transition: 2s;
+  animation: show 2s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+
+  .block1-txt {
+    width: 100%;
+    max-width: 900px;      
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+    .block1-txt-new {
+      font-size: clamp(24px, 3vw, 40px);   // адаптивный размер без медиазапросов
+      color: black;
+    }
+
+    .block1-txt-lorem {
+      font-size: clamp(18px, 2.5vw, 32px);  // тоже адаптивно
+      color: black;
+    }
+  }
+}
+@keyframes show{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

@@ -1,0 +1,14 @@
+.rate{
+
+    display: flex;
+
+    &-s{
+        background: transparent;
+    
+    }
+    &-o{
+        background: transparent;
+        font-size: 16px;
+        color: var(--text);
+    }
+}

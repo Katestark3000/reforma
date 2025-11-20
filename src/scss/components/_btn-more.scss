@@ -1,0 +1,33 @@
+.btn{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+.btn-more {
+    background-color: transparent;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-teracot);
+    color: white;
+    transition: all 0.3s ease;
+    display: flex;
+    white-space: nowrap;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-more:hover {
+    background-color: var(--color-sand);
+}
+
+.btn-more:active {
+    background-color: #FFFBF0;
+}

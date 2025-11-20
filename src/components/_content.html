@@ -1,0 +1,28 @@
+<div class="content">
+    <div class="content-left">
+        <button class="catalog-open-btn">Каталог</button>
+
+        <!-- обычный каталог (desktop / tablet) -->
+        <div class="cataloge-desktop">
+            @@include('../components/_cataloge.html')
+        </div>
+    </div>
+
+    <div class="content-right">
+        @@include('../components/_block-discover.html')
+        @@include('../components/_podborki.html') 
+        @@include('../components/_otzivs.html') 
+        @@include('../components/_about.html') 
+        @@include('../components/_cta.html') 
+    </div>
+</div>
+
+<!-- Модальное окно каталога (mobile) -->
+<div class="cataloge-modal-overlay"></div>
+
+<div class="cataloge-modal">
+    <div class="cataloge-modal-content">
+
+        @@include('../components/_cataloge.html')
+    </div>
+</div>
